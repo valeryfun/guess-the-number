@@ -8,6 +8,7 @@ import {
 	Keyboard,
 	Alert
 } from 'react-native'
+import BodyText from './BodyText'
 import Input from './Input'
 import Card from './Card'
 import NumberContainer from './NumberContainer'
@@ -60,9 +61,9 @@ const StartGameScreen = props => {
 			}}
 		>
 			<View style={styles.screenContainer}>
-				<Text style={styles.title}>Start a New Game!</Text>
+				<BodyText style={styles.title}>Start a New Game!</BodyText>
 				<Card style={styles.inputContainer}>
-					<Text style={styles.subtitle}>Select a Number!</Text>
+					<BodyText style={styles.subtitle}>Select a Number!</BodyText>
 					<Input
 						style={styles.input}
 						blurOnSubmit
